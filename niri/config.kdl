@@ -7,7 +7,6 @@
 // Find the full list of options on the wiki:
 // https://yalter.github.io/niri/Configuration:-Input
 
-spawn-at-startup "/usr/lib/polkit-kde-authentication-agent-1"
 
 input {
     keyboard {
@@ -356,6 +355,7 @@ binds {
     Mod+D hotkey-overlay-title="Run an Application: fuzzel" { spawn "fuzzel";}
     Mod+Alt+L hotkey-overlay-title="Lock the Screen: swaylock" { spawn "swaylock"; }
     Mod+M { maximize-window-to-edges; }
+    Mod+E hotkey-overlay-title="Nautilus File Browser" { spawn "nautilus"; }
 
     // Use spawn-sh to run a shell command. Do this if you need pipes, multiple commands, etc.
     // Note: the entire command goes as a single argument. It's passed verbatim to `sh -c`.
